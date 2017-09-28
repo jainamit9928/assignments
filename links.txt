@@ -1,0 +1,5 @@
+https://stanko.github.io/setting-up-webpack-babel-and-react-from-scratch/
+
+npm registry
+npm config set registry="http://registry.npmjs.org/"
+npm config set proxy <proxyserver>:<port>

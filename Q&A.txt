@@ -1,0 +1,82 @@
+Object.is(a,b) instead of ===
+
+why ComponentDiDMount not componentWillMount
+https://stackoverflow.com/questions/27139366/why-do-the-react-docs-recommend-doing-ajax-in-componentdidmount-not-componentwi
+1)
+Invoked once, both on the client and server, immediately before the initial rendering occurs
+2)if by chance your api gets executed before mounting of your component then error will be throwing for setting state for an unmounted component
+3) React removing componentWillMount in future
+constr
+will mount
+render
+did mount
+ReceiveProps
+shouldComponent
+WillUpdate
+render
+
+
+Curry,Reuce,partials
+C:\Users\AMJA\Desktop\React-ReduxExamples\series3\assignment-20-07\js
+
+Middleware
+https://medium.com/@meagle/understanding-87566abcfb7a
+
+Why use redux
+
+Requirment:
+As developers, 
+we are expected to handle optimistic updates, 
+server-side rendering, 
+fetching data before performing route transitions
+Less complexity
+
+Redux gives:
+Single source of truth
+State is read-only
+Changes are made with pure functions
+Server Rendering
+Developer Experience
+Redux has a rich and fast-growing ecosystem. This is because it provides a few extension points such as middleware. 
+It was designed with use cases such as logging, support for Promises, Observables, routing, immutability dev checks, persistence, etc,
+Simplicity(hot-reload,undo-redo)
+ Redux API surface is tiny. 
+ https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/
+ 
+ Thunk:
+ Thunks are called by the action creator on each new action (e.g. LOGIN_REQUEST). i.e. 
+ actions are continually pushed to thunks, and thunks have no control on when to stop handling those actions.
+ Thunk disptaches functions while not dispatches an action
+ 
+ increaseAsyncThunk: () => dispatch(startIncrementAsync())
+C:\Users\AMJA\Desktop\React-ReduxExamples\Day6-master\1ReduxThunk\src\ActionCreators
+ 
+ https://stackoverflow.com/questions/34930735/pros-cons-of-using-redux-saga-with-es6-generators-vs-redux-thunk-with-es2017-asy/34933395
+ 
+ PureCOmponent & React.component
+ https://stackoverflow.com/questions/40703675/react-functional-stateless-component-purecomponent-component-what-are-the-dif
+ 
+ saga:
+ In redux-saga, generators pull the next action. i.e. they have control when to listen for some action, and when to not. 
+ In the above example the flow instructions are placed inside a while(true) loop, 
+ so it'll listen for each incoming action, which somewhat mimics the thunk pushing behavior.
+ 
+ Sync Thunk: a wrapper around a value
+ var thunk = function(){
+ return add(10,12)
+ }
+ 
+ Async thunk:
+ function addAsync(x,y,cb){
+ setTimeOut(function(){
+	cb(x+y)
+ }),1000
+ }
+ 
+ 
+ var thunk = funciton(cb){
+ addAsync(10,15,cb)
+ }
+ 
+ thunk(function(sum){
+ sum})

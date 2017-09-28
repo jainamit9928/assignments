@@ -1,0 +1,59 @@
+{
+  "techies": [
+    {
+      "id": "63515",
+      "name": "Cullen Goyette",
+      "avatar": "http://localhost:3000/img1.jpg",
+      "title": "Forward Quality Developer",
+      "day_start": 21,
+      "day_end": 54,
+      "follower": 193,
+      "following": 627,
+      "reviews": 877
+    },
+    {
+      "id": "63516",
+      "name": "Johnson Streich",
+      "avatar": "http://localhost:3000/img2.jpg",
+      "title": "Customer Intranet Architect",
+      "day_start": 7,
+      "day_end": 15,
+      "follower": 188,
+      "following": 88,
+      "reviews": 624
+    },
+    {
+      "id": "63517",
+      "name": "Araceli Kuhn",
+      "avatar": "http://localhost:3000/img3.jpg",
+      "title": "Principal Quality Administrator",
+      "day_start": 30,
+      "day_end": 24,
+      "follower": 217,
+      "following": 640,
+      "reviews": 660
+    },
+    {
+      "id": "63518",
+      "name": "Ms. Darby MacGyver",
+      "avatar": "http://localhost:3000/img4.jpg",
+      "title": "Regional Assurance Facilitator",
+      "day_start": 55,
+      "day_end": 48,
+      "follower": 640,
+      "following": 909,
+      "reviews": 531
+    },
+    {
+      "id": "63519",
+      "name": "Jalen Oberbrunner",
+      "avatar": "http://localhost:3000/img5.jpg",
+      "title": "Principal Mobility Supervisor",
+      "day_start": 42,
+      "day_end": 2,
+      "follower": 607,
+      "following": 730,
+      "reviews": 360
+    }
+  ]
+}

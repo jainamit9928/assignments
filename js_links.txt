@@ -1,0 +1,70 @@
+username: varj@saxobank.com
+Password: saxo@1234
+https://frontendmasters.com 
+https://wiki/display/STGO/Coding+Standards 
+WEBPACK-----------------
+https://medium.com/react-weekly/code-chunking-with-webpack-a-pragmatic-approach-e17e8bcc6453
+
+HOCS
+https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e
+
+React optimization
+https://marmelab.com/blog/2017/02/06/react-is-slow-react-is-fast.html
+
+functional [rpgramming
+http://benalman.com/news/2012/09/partial-application-in-javascript/]
+draggable and droppable
+https://jsfiddle.net/silverstarfy/7fkg0w6k/
+
+
+// testing links
+:::
+https://github.com/jfairbank/redux-saga-test-plan/
+https://github.com/codereviewvideos/react-login-registration/blob/new-master-1/__tests__/sagas/auth.saga.react-test.js
+https://www.npmjs.com/package/redux-saga-testing
+
+
+// Instead of having to use slice.call every time,
+02.
+var slice = Array.prototype.slice;
+03.
+var args = slice.call(arguments);
+04.
+ 
+05.
+// You can just use slice without .call by binding slice TO call!
+06.
+var slice = Function.prototype.call.bind(Array.prototype.slice);
+07.
+var args = slice(arguments);
+08.
+ 
+
+// Math.max and Math.min take any number of arguments,
+02.
+Math.max(15, -10, 0, 5, 10);   // 15
+03.
+ 
+04.
+// But they don't know how to handle arrays.
+05.
+Math.max([15, -10, 0, 5, 10]); // NaN
+06.
+ 
+07.
+// So, let's fix that :)
+08.
+var maxArray = Function.prototype.apply.bind(Math.max, null);
+09.
+maxArray([15, -10, 0, 5, 10]); // 15
+ar _bind = Function.bind,
+    _call = _bind.call,
+    _apply = _bind.apply,
+    bindbind = _bind.bind(_bind),
+    callbind = bindbind(_call),
+    applybind = bindbind(_apply);
+//usage
+var slice = callbind([].slice),
+    concat = callbind([].concat),
+    flatten = applybind([].concat, []),
+    testable = bindbind(/./.test);

@@ -1,0 +1,40 @@
+http://in.pachost.mid.dom/ 
+1) What all browser supports which form controls and what we can do for getting the same results
+How browser work :https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+https://www.wufoo.com/html5/
+https://code.tutsplus.com/tutorials/how-to-build-cross-browser-html5-forms--net-17140
+http://html5please.com/#url
+
+2) An appointment form with all the validation,
+3)browser detection technique with version number using navigator
+brower name ,version
+
+4) reverse geo coding using google maps api ,class called geocoder ,which wiill take lat and long ,get foramted address from this
+
+AIzaSyAVB1p-_ue1vlT40F9f9Pz6rXRfbRmWIdE
+5) check the shared worker
+
+6) if there is any update event then load the page in app chache(updatereadyevent)
+
+7) localstorage 
+8) reading options for file reader ,more from xhr ,how can u send the file which u r uploading.
+
+file reader
+https://www.html5rocks.com/en/tutorials/file/dndfiles/
+
+use cases of clousers
+
+AMD or UMD pattern
+
+REACT DIGRAMS
+https://medium.com/@rajaraodv/the-inner-workings-of-virtual-dom-666ee7ad47cf
+
+generators
+http://2ality.com/2015/03/es6-generators.html
+
+combined reducer from scratch
+https://codepen.io/b00stup/pen/jqXJYK
+
+Prototypal inheritance 
+http://davidshariff.com/blog/javascript-inheritance-patterns/
+
